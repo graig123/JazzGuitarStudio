@@ -1,3 +1,21 @@
-<li {% if active_link == "home" %}class="active"{% endif %}><a href="{% url 'home' %}">Home</a></li>
-<li {% if active_link == "about" %}class="active"{% endif %}><a href="{% url 'about' %}">About</a></li>
-<li {% if active_link == "Funstuff" %}class="active"{% endif %}><a href="{% url 'about' %}">Funstuff</a></li>
+<li {% if active_link == "about" %}class="active"{% endif %}><a href="{% url 'about' %}">your learn plan</a></li>
+<li {% if active_link == "scales" %}class="active"{% endif %}>
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Scales<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="{% url 'scales' %}">Diatonic modes</a></li>
+                  <li><a href="#">Melodic and Harmonic</a></li>
+                  <li><a href="#">Bebop modes</a></li>
+                </ul>
+              </li>
+
+<li {% if active_link == "chords" %}class="active"{% endif %}>
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Chords <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="{% url 'chords' %}">Single Chords</a></li>
+                  <li><a href="#">Chord inversions</a></li>
+                  <li><a href="#">Harmonised to scale</a></li>
+                </ul>
+              </li>
+
+<li {% if active_link == "arpegios" %}class="active"{% endif %}><a href="{% url 'arpegios' %}">Arpegios</a></li>
+{# <li {% if active_link == "chords" %}class="dropdown"{% endif %}><a href="{% url 'chords' %}">Chords</a></li> #}

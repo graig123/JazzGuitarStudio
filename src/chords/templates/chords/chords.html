@@ -1,0 +1,177 @@
+{% extends "base.html" %}
+
+{% load staticfiles %}
+{% load crispy_forms_tags %}
+
+{% block title %}{{ block.super }}{% endblock %}
+
+{% block navbar-left %}
+  {% include "_navbar.html" with active_link="chords" %}
+{% endblock %}
+
+<!-- Benefits of the Django application -->
+{% block container %}
+
+<div id="sec1" class="text-page">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <div id="fredboard">
+{% include 'empty.svg' %}
+{{ svg|safe }}</svg>
+        </div>
+
+<center>
+
+
+   <form id="form1">
+   <div class="col-md-2">
+  <select class="form-control" name="note" onchange="setNote()"  id="root_note" >
+    <option value="C">C</option>
+    <option value="A">A</option>
+    <option value="E">E</option>
+    <option value="G">G</option>
+  </select>
+  </div>
+  <div class="col-md-2">
+     <select class="form-control" name="type" onchange="setType()"  id="type" >
+    <option value="drop2">drop2</option>
+    <option value="drop3">drop3</option>
+    <option value="drop4">drop2/4</option>
+    <option value="closed">closed</option>
+  </select>
+  </div>
+  <div class="col-md-2">
+    <select class="form-control" name="shape" onchange="setShape()"  id="shape" >
+    <option value="M7">M7</option>
+    <option value="7">7</option>
+    <option value="m7">m7</option>
+    <option value="m7b5">m7b5</option>
+  </select>
+  </div>
+  <div class="col-md-3">
+      <select class="form-control" name="inversion" onchange="setInv()"  id="inv" >
+    <option value="inv1">1st inversion</option>
+    <option value="inv2">2nd inversion</option>
+    <option value="inv3">3rd inversion</option>
+    <option value="inv4">4th inversion</option>
+  </select>
+  </div>
+  <div class="col-md-3">
+    <select class="form-control" name="stringset" onchange="setString()"  id="stringset" >
+    <option value="strS1">stringset1</option>
+    <option value="strS2">stringset2</option>
+    <option value="strS3">stringset3</option>
+  </select>
+  </div>
+   </form>
+</center>
+    </div>
+   </div>
+  </div>
+
+
+<div id="sec2" class="text-page">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 text-center">
+<div id="title">
+<h2>{{ title }}</h2>
+        <p class="lead">{{ subtitle }}</p>
+</div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-4">
+        <div class="text-center"></div>
+        <p class="heavy text-center">Cassidy Coder</p>
+        <h2>Front-end developer</h2>
+        <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+      </div>
+      <div class="col-lg-4">
+        <div class="text-center"></div>
+        <p class="heavy text-center">James King</p>
+        <h2>CEO</h2>
+        <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+      </div>
+      <div class="col-lg-4">
+        <div class="text-center"><img class="img-circle centered" src="" alt="profile pic"></div>
+        <p class="heavy text-center">Kate Lamport</p>
+        <h2>Front-end designer</h2>
+        <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+      </div>
+    </div>
+    </div>
+  </div>
+</div>
+
+<div id="sec3">
+  <div class="container">
+    <div class="row">
+      <div id="map-outer" class="col-md-12">
+        <div id="address" class="col-md-4">
+          <h2>Our Location</h2>
+          <address>
+            <strong>Edge Solutions Ltd.</strong><br>
+            Taj Mahal<br>
+            Agra<br>
+            Uttar Pradesh<br>
+            India - 282001<br>
+            <abbr>P:</abbr> +91 0562 222 6431
+          </address>
+        </div>
+        <div id="map-container" class="col-md-8"></div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock container %}
+
+{% block scripts %}
+
+<script type="text/javascript">
+   var note;
+    function setNote(){
+      note = document.getElementById('root_note').value;
+      // alert(note);
+    }
+  var shape;
+  function setShape(){
+    shape = document.getElementById('shape').value;
+    // alert(shape);
+    }
+  var string;
+  function setString(){
+    string = document.getElementById('stringset').value;
+    // alert(string);
+    }
+  var type_chord;
+  function setType(){
+    type_chord = document.getElementById('type').value;
+    // alert(type_chord);
+    }
+  var inv;
+  function setInv(){
+    inv = document.getElementById('inv').value;
+    // alert(inv);
+    }
+$(document).ready(function() {
+   $("#form1").change( function() {
+
+    $("#fredboard").load('/AjaxChord/ #fredboard',{note: note, shape: shape, string:string, type_chord:type_chord, inv:inv, 'csrfmiddlewaretoken': '{{ csrf_token }}'});
+    // });
+
+       $("#title").load('/AjaxChord/ #title',{note: note, shape: shape, string:string, type_chord:type_chord, inv:inv, 'csrfmiddlewaretoken': '{{ csrf_token }}'});
+        });
+//    $("#shape").change( function() {
+
+//     $("#fredboard").load('/AjaxChord/ #fredboard',{shape: $(this).val(), 'csrfmiddlewaretoken': '{{ csrf_token }}'});
+//     });
+
+});
+
+</script>
+
+
+{% endblock scripts %}
+

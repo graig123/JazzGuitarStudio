@@ -22,13 +22,18 @@ html, body{
 }
 
 body>.navbar-transparent {
-    background-color: transparent;
-    border-color: transparent;
+    background-color: black;
+    border-color: black;
     box-shadow: none;
 }
 
 .navbar-transparent .navbar-nav > .active > a {
-    background-color: transparent;
+    background-color: black;
+}
+
+.navbar-default {
+    background-color: black;
+    border-color: black;
 }
 
 .navbar-form {
@@ -39,6 +44,27 @@ body>.navbar-transparent {
     padding-top: 10px;
     padding-bottom: 10px;
 }
+
+.navbar .nav > li > a {
+    color:  #34A853 !important;
+}
+
+.navbar .nav > li > a:hover {
+    color:  #fbbc05 !important;
+}
+
+ .navbar-default .navbar-nav > .active{
+      color: #fbbc05 !important;
+ }
+ .navbar-default .navbar-nav > .active > a{
+        color: #fbbc05 !important;
+ }
+ .navbar-default .navbar-nav > .active > a:hover{
+       color: #fbbc05 !important;
+ }
+ .navbar-default .navbar-nav > .active > a:focus {
+      color: #fbbc05 !important;
+ }
 
 .navbar-nav>.btn{
     margin-top:10px;
@@ -55,7 +81,11 @@ body>.navbar-transparent {
 
 .navbar-brand > img {
     float: left;
+    width: 62px;
+    height: 65px;
     margin-right: 10px;
+    margin-top: -26px;
+    margin-left: -10px;
 }
 
 .btn {
@@ -63,6 +93,11 @@ body>.navbar-transparent {
     -webkit-box-shadow: 0px 1px 0px #ddd;
     -moz-box-shadow: 0px 1px 0px #ddd;
     box-shadow: 0px 1px 0px #ddd;
+}
+
+#fredboard {
+      font-family: openSans;
+      font-size: 11px;
 }
 
 /* Home page styling */
@@ -115,13 +150,13 @@ body>.navbar-transparent {
 }
 
 /* About page styling */
-#sec1 {
-    background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAJklEQVQIW2NkAIILFy78NzAwYATRjCABZEGwAEwFiA1WBlIOUwkA72gTdDIYVO4AAAAASUVORK5CYII=) repeat;
+.sec1 {
+    padding:20px;
+
 }
 
 /* Profile page styling */
 .profile-head {
-    background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAJklEQVQIW2NkAIILFy78NzAwYATRjCABZEGwAEwFiA1WBlIOUwkA72gTdDIYVO4AAAAASUVORK5CYII=) repeat;
     padding: 70px 0px 30px 20px;
 }
 .profile-body {
@@ -129,7 +164,8 @@ body>.navbar-transparent {
 }
 
 .text-page {
-    padding: 120px 0;
+    padding-top: 70px;
+    padding-bottom: 0px;
 }
 
 #map-outer {

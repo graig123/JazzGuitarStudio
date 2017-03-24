@@ -4,11 +4,20 @@ from django.conf import settings
 from django.conf.urls.static import static
 import profiles.urls
 import accounts.urls
+import scales.urls
 from . import views
+from scales.views import ScalesPage, AjaxChord
+from chords.views import ChordsPage, ArpegiosPage, AjaxChord
+
 
 urlpatterns = [
     url(r'^$', views.HomePage.as_view(), name='home'),
     url(r'^about/$', views.AboutPage.as_view(), name='about'),
+    url(r'^scales/$', ScalesPage.as_view(), name='scales'),
+    url(r'^chords/$', ChordsPage.as_view(), name='chords'),
+    url(r'^arpegios/$', ArpegiosPage.as_view(), name='arpegios'),
+    url(r'^AjaxChord/$', AjaxChord.as_view(), name='AjaxChord'),
+    #url(r'^scales/', include(scales.urls, namespace='scales')),
     url(r'^users/', include(profiles.urls, namespace='profiles')),
     url(r'^admin/', include(admin.site.urls)),
     url(r'^', include(accounts.urls, namespace='accounts')),
@@ -23,4 +32,3 @@ if settings.DEBUG:
     urlpatterns += [
         url(r'^__debug__/', include(debug_toolbar.urls)),
     ]
-

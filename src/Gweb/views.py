@@ -7,3 +7,11 @@ class HomePage(generic.TemplateView):
 
 class AboutPage(generic.TemplateView):
     template_name = "about.html"
+
+
+class ChordsPage(generic.TemplateView):
+    template_name = "chords.html"
+
+
+class ScalesPage(generic.TemplateView):
+    template_name = "scales.html"

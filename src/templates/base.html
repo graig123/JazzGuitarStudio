@@ -2,8 +2,9 @@
 <html lang="en">
     {% load staticfiles %}
     {% load thumbnail %}
-    
+
   <head>
+
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,7 +12,14 @@
     <meta name="author" content="Arun Ravindran">
     <link rel="shortcut icon" href="{% static 'site/ico/favicon.ico' %}">
 
-    <title>{% block title %}{% include "_brandname.html" %} :: {% endblock %}</title>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.2/css/bootstrap-select.min.css">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.2/js/bootstrap-select.min.js"></script>
+
+
+    <title>Jazzguitar.ist</title>
 
     <!-- Bootstrap core CSS -->
     <link href="{% static 'bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
@@ -44,7 +52,7 @@
           </button>
           <a class="navbar-brand" href="{% url 'home' %}">
             {% block navbar-brand %}
-              <img src="{% static 'site/img/logo.png' %}" alt="logo">
+              {# <img src="{% static 'site/img/logo.png' %}" alt="logo"> #}
               {% include "_brandname.html" %}
             {% endblock %}
           </a>
@@ -66,7 +74,7 @@
 			{{ user.get_full_name|truncatechars:20 }}
 			<span class="caret"></span>
 		    </a>
-		    
+
                   <ul class="dropdown-menu" role="menu">
                     <li><a href="{% url 'profiles:show_self' %}">Profile</a></li>
                     <li><a href="{% url 'accounts:logout' %}">Logout</a></li>
@@ -94,7 +102,7 @@
 
     {% block splash %}
     {% endblock splash %}
-    
+
     {% block container %}
     <div class="container">
 
@@ -114,7 +122,7 @@
             <div class="footer">
         <div class="row">
           <div class="col-lg-6">
-              <p style="color:red;">&copy; JazzGuitar Studio {% now 'Y' %}</p>
+              <p><bold><font color="#34A853">&copy; Jazz</font><font color="#fbbc05">guitar</font><font color="#34A853">.</font><font color="#fbbc05">ist</font></bold><font color="grey">  {% now 'Y' %}</font></p>
           </div>
           <div class="col-lg-6 text-right">
             Connect with us on

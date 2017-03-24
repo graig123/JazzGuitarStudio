@@ -1,0 +1,771 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"count",
+				"count_nt"
+			],
+			[
+				"coun",
+				"count_nt"
+			],
+			[
+				"cou",
+				"count1"
+			],
+			[
+				"draw",
+				"draw_single_box"
+			],
+			[
+				"bo",
+				"scale_boxes"
+			],
+			[
+				"scale",
+				"scale_boxes"
+			],
+			[
+				"font",
+				"font-family"
+			],
+			[
+				"A",
+				"A"
+			],
+			[
+				"ch",
+				"chord_type"
+			],
+			[
+				"chord",
+				"chordcolor"
+			],
+			[
+				"background-c",
+				"background-color"
+			],
+			[
+				"temp",
+				"templist_tr"
+			],
+			[
+				"templ",
+				"templist_tr"
+			],
+			[
+				"cho",
+				"chord_formula"
+			],
+			[
+				"chor",
+				"chord_type"
+			],
+			[
+				"fre",
+				"fretboard_svg"
+			],
+			[
+				"drop2",
+				"drop2and4"
+			],
+			[
+				"chord_list",
+				"chord_list"
+			],
+			[
+				"chord_",
+				"chord_type"
+			],
+			[
+				"cord",
+				"chord_formula"
+			],
+			[
+				"operato",
+				"operator_dict"
+			],
+			[
+				"not",
+				"notes_type"
+			],
+			[
+				"str",
+				"strings_builder"
+			],
+			[
+				"tra",
+				"transpose"
+			],
+			[
+				"gen",
+				"generic_inv"
+			],
+			[
+				"print",
+				"PROFANITIES_LIST"
+			],
+			[
+				"ge",
+				"generic_inv"
+			],
+			[
+				"stand",
+				"standard"
+			],
+			[
+				"set_drop_2",
+				"set_drop_2and4_bottom"
+			],
+			[
+				"set_drop2an",
+				"set_drop_2and4_top"
+			],
+			[
+				"set_drop3_",
+				"set_drop3_bottom"
+			],
+			[
+				"set_dr",
+				"set_drop3_top"
+			],
+			[
+				"set_drop2",
+				"set_drop2_midle"
+			],
+			[
+				"no",
+				"notes_type"
+			],
+			[
+				"shape_M7",
+				"shape_M7"
+			],
+			[
+				"s",
+				"self"
+			],
+			[
+				"co",
+				"contrib"
+			],
+			[
+				"u",
+				"url"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "views.py",
+			"settings":
+			{
+				"buffer_size": 1536,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "guitar_class.py",
+			"settings":
+			{
+				"buffer_size": 4182,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "fredboardScales.py",
+			"settings":
+			{
+				"buffer_size": 5901,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/graig/Desktop/Webdev/Gweb/src/templates/base.html",
+			"settings":
+			{
+				"buffer_size": 5401,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/graig/Desktop/Webdev/Gweb/src/templates/_navbar.html",
+			"settings":
+			{
+				"buffer_size": 1372,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/graig/Desktop/Webdev/Gweb/src/Gweb/urls.py",
+			"settings":
+			{
+				"buffer_size": 1296,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/graig/Desktop/Webdev/Gweb/src/chords/views.py",
+			"settings":
+			{
+				"buffer_size": 2798,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/graig/Desktop/Webdev/Gweb/src/chords/fredboardScales.py",
+			"settings":
+			{
+				"buffer_size": 23283,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "Packages/Python/Python.sublime-build",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				]
+			],
+			[
+				"Packages/Python/Python.sublime-build",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 310.0,
+		"last_filter": "rem",
+		"selected_items":
+		[
+			[
+				"rem",
+				"Package Control: Remove Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 416.0
+	},
+	"console":
+	{
+		"height": 118.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/home/graig/Desktop/Webdev/Gweb/src",
+		"/home/graig/Desktop/Webdev/Gweb/src/scales"
+	],
+	"file_history":
+	[
+		"/home/graig/Desktop/Webdev/Gweb/src/scales/views.py",
+		"/home/graig/Desktop/Webdev/Gweb/src/scales/scales.html",
+		"/home/graig/Desktop/Webdev/Gweb/src/scales/templates/scales/views.py",
+		"/home/graig/Desktop/Webdev/Gweb/src/Gweb/settings/base.py",
+		"/home/graig/Desktop/Webdev/Gweb/src/scales/templates/scales/scales.html",
+		"/home/graig/Desktop/Webdev/Gweb/src/chords/guitarClass.py",
+		"/home/graig/Desktop/Webdev/Gweb/src/chords/fredboardScales.py",
+		"/home/graig/Desktop/Webdev/Gweb/src/chords/views.py",
+		"/home/graig/Desktop/Webdev/Gweb/src/chords/fredboardChords.py",
+		"/home/graig/Desktop/Webdev/Gweb/src/Gweb/views.py",
+		"/home/graig/Desktop/Webdev/Gweb/src/chords/templates/chords/AjaxChord.html",
+		"/home/graig/Desktop/Webdev/Gweb/src/chords/templates/chords/chords.html",
+		"/home/graig/Desktop/Webdev/Gweb/src/Gweb/urls.py",
+		"/home/graig/Desktop/Webdev/Gweb/src/templates/base.html",
+		"/home/graig/Desktop/Webdev/Gweb/src/templates/_navbar.html",
+		"/home/graig/Desktop/Webdev/Gweb/src/accounts/views.py",
+		"/home/graig/Desktop/Webdev/Gweb/src/accounts/templates/accounts/auth_base.html",
+		"/home/graig/Desktop/Webdev/Gweb/src/accounts/templates/accounts/login.html",
+		"/home/graig/Desktop/Webdev/Gweb/src/accounts/models.py",
+		"/home/graig/Desktop/Webdev/Gweb/src/accounts/forms.py",
+		"/home/graig/Desktop/Webdev/Gweb/src/static/site/css/main.css",
+		"/home/graig/Desktop/Webdev/Gweb/src/GarbageBin/myfile.html",
+		"/home/graig/Desktop/Webdev/Gweb/src/profiles/views.py",
+		"/home/graig/Desktop/Webdev/Gweb/src/empty.svg",
+		"/home/graig/Desktop/Webdev/Gweb/src/templates/empty.svg",
+		"/home/graig/Desktop/Webdev/Gweb/src/templates/scalesA.html",
+		"/home/graig/Desktop/Webdev/Gweb/src/templates/AjaxChord.html",
+		"/home/graig/Desktop/Webdev/Gweb/src/scales/apps.py",
+		"/home/graig/Desktop/Webdev/Gweb/src/templates/scales.html",
+		"/home/graig/Desktop/Webdev/Gweb/src/chords/tests.py",
+		"/home/graig/Desktop/Webdev/Gweb/src/chords/models.py",
+		"/home/graig/Desktop/Webdev/Gweb/src/chords/apps.py",
+		"/home/graig/Desktop/Webdev/Gweb/src/scales/admin.py",
+		"/home/graig/Desktop/Webdev/Gweb/src/static/bootstrap/js/bootstrap.js",
+		"/home/graig/Desktop/Webdev/Gweb/src/static/bootstrap/js/bootstrap.min.js",
+		"/home/graig/Desktop/Webdev/Gweb/src/fredboardM_web1.py",
+		"/home/graig/Desktop/Webdev/Gweb/src/fredboardM_web.py",
+		"/home/graig/Desktop/Webdev/Gweb/src/guitar_class.py",
+		"/home/graig/Desktop/Webdev/Gweb/src/guitar.py",
+		"/home/graig/Desktop/Webdev/Gweb/src/scales/urls.py",
+		"/home/graig/Desktop/Webdev/Gweb/src/test.svg",
+		"/home/graig/Training/Python/Guitar/fredboardM.py",
+		"/home/graig/Desktop/Webdev/Gweb/src/accounts/urls.py",
+		"/home/graig/Desktop/Webdev/Gweb/src/profiles/urls.py",
+		"/home/graig/Desktop/Webdev/Gweb/src/Gweb/logger.py",
+		"/home/graig/Desktop/Webdev/Gweb/src/Gweb/wsgi.py",
+		"/home/graig/Training/Python/Guitar/guitar.py",
+		"/home/graig/Desktop/Webdev/Gweb/src/Gweb/settings/development.py",
+		"/home/graig/Desktop/Webdev/Gweb/src/templates/_brandname.html",
+		"/home/graig/Desktop/Webdev/Gweb/src/static/site/ico/favicon.ico",
+		"/home/graig/Desktop/Webdev/Gweb/src/templates/test.svg",
+		"/home/graig/Desktop/Webdev/Gweb/src/chords/urls.py",
+		"/home/graig/Training/Python/Guitar/fredboardM_web.py",
+		"/home/graig/Desktop/Webdev/Gweb/src/static/bootstrap/css/bootstrap.css",
+		"/home/graig/Desktop/Webdev/Gweb/src/static/bootstrap/css/bootstrap.min.css",
+		"/home/graig/Desktop/Webdev/Gweb/src/templates/myfile.html",
+		"/home/graig/Training/Python/Guitar/guitar_class.py",
+		"/home/graig/Desktop/naam.svg",
+		"/home/graig/Desktop/test.svg",
+		"/home/graig/Desktop/svgtopng.py",
+		"/home/graig/Desktop/naam-svg.svg",
+		"/home/graig/Training/Python/Guitar/Neck.py",
+		"/home/graig/Desktop/drawing.svg",
+		"/home/graig/Desktop/OpenSans.woff2",
+		"/home/graig/Desktop/Webdev/Gweb/src/media/profile_pics/2017-02-18/index.jpeg",
+		"/home/graig/Desktop/Webdev/Gweb/src/media/profile_pics/2017-02-18/index.jpeg.30x30_q85_crop.png",
+		"/home/graig/Desktop/Webdev/Gweb/src/templates/about.html",
+		"/home/graig/Desktop/Webdev/Gweb/src/templates/home.html",
+		"/home/graig/Training/Python/Guitar/test.html",
+		"/home/graig/Desktop/Fretboard.svg",
+		"/home/graig/Desktop/test.html",
+		"/home/graig/Desktop/Fretboard_inlays.svg",
+		"/home/graig/Desktop/C_Major_Scale_on_fretboard.svg",
+		"/home/graig/Desktop/A9.svg",
+		"/home/graig/Desktop/neck.svg",
+		"/home/graig/Training/Python/Guitar/Drop2Chord.py",
+		"/home/graig/Training/Python/classTest.py",
+		"/home/graig/Training/Python/Guitar/import operator",
+		"/home/graig/Training/Python/Guitar/Chord.py",
+		"/home/graig/.config/sublime-text-3/Packages/User/Anaconda.sublime-settings",
+		"/home/graig/.config/sublime-text-3/Packages/Anaconda/Anaconda.sublime-settings",
+		"/home/graig/Env/Django18/lib/python2.7/site-packages/mingus/core/notes.py"
+	],
+	"find":
+	{
+		"height": 65.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"E",
+			"svg_t.append",
+			"svg",
+			"svg[1]",
+			"svg[0]",
+			"svg.append",
+			"f.write",
+			";\n",
+			"('',",
+			"drop2_inv2_strS1",
+			"],,[",
+			"('',",
+			"():",
+			"total",
+			"notes_sharp",
+			")\n",
+			"i",
+			"def"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"folders":
+	[
+		{
+			"path": "/home/graig/Desktop/Webdev/Gweb/src"
+		}
+	],
+	"groups":
+	[
+		{
+			"selected": 2,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "views.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1536,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								259,
+								259
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Djaneiro/Syntaxes/Python Django.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "guitar_class.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4182,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3,
+								3
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Djaneiro/Syntaxes/Python Django.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "fredboardScales.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5901,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								406,
+								406
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Djaneiro/Syntaxes/Python Django.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 129.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/home/graig/Desktop/Webdev/Gweb/src/templates/base.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5401,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2371,
+								2371
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Djaneiro/Syntaxes/HTML (Django).tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 374.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "/home/graig/Desktop/Webdev/Gweb/src/templates/_navbar.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1372,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1178,
+								1178
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Djaneiro/Syntaxes/HTML (Django).tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "/home/graig/Desktop/Webdev/Gweb/src/Gweb/urls.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1296,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								328,
+								328
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Djaneiro/Syntaxes/Python Django.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "/home/graig/Desktop/Webdev/Gweb/src/chords/views.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2798,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1382,
+								1382
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Djaneiro/Syntaxes/Python Django.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 351.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "/home/graig/Desktop/Webdev/Gweb/src/chords/fredboardScales.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 23283,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								17048,
+								17048
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Djaneiro/Syntaxes/Python Django.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 7199.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 65.0
+	},
+	"input":
+	{
+		"height": 62.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 328.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "Anaconda Python Builder",
+	"project": "",
+	"replace":
+	{
+		"height": 66.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 253.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

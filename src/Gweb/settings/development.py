@@ -2,6 +2,7 @@ from .base import *             # NOQA
 import sys
 import logging.config
 
+
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 TEMPLATES[0]['OPTIONS'].update({'debug': True})
@@ -64,14 +65,15 @@ LOGGING = {
             'formatter': 'verbose'
         },
         'console': {
-            'level': 'DEBUG',
+            'level': 'INFO',
             'class': 'logging.StreamHandler',
             'formatter': 'simple'
         }
     },
     'loggers': {
         'django': {
-            'handlers': ['django_log_file'],
+            #            'handlers': ['django_log_file'],
+            'handlers': ['console'],
             'propagate': True,
             'level': 'DEBUG',
         },
