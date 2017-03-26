@@ -9,6 +9,14 @@ class jscale:
     def __init__(self, root, scale_formula):
         self.root = root
         self.scale_formula = scale_formula
+        # if self.scale_formula == 'Dorian':
+        #     x = string_builder(sharps, self.root)
+        #     # print(x)
+        #     for y in x:
+
+        #         findR = y.index(self.root) - 2
+        #         self.root = y[findR]
+        # print(self.root)
 
         self.scale_boxes = [
             # Box 1
@@ -88,6 +96,10 @@ class jscale:
         }
 
     def make(self):
+        if self.scale_formula == 'Ionian':
+            adj = 0
+        elif self.scale_formula == 'Dorian':
+            adj = 2
         trans1 = self.formsdict['Ionian']
         trans2 = self.formsdict[self.scale_formula]
         trans = maketrans(trans1, trans2)
@@ -96,6 +108,7 @@ class jscale:
             for st in box:
                 count = 0
                 st[0], st[2], st[4] = st[0].translate(trans), st[2].translate(trans), st[4].translate(trans)
+                st[1], st[3], st[5] = (st[1] - adj), (st[3] - adj), (st[5] - adj)
         for box in self.scale_boxes:
             for st in box:
                 if st[4] == 'X':
@@ -104,6 +117,7 @@ class jscale:
         for box in self.scale_boxes:
             if self.scale_formula == 'Dorian':
                 for st in box:
+
                     if '3' in st:
                         ch = st.index('3')
                         st[ch] = 'b3'
@@ -119,3 +133,5 @@ def scale(root, scale_type):
     y = x.transpose()
     z = x.make()
     return z
+
+scale('C', 'Dorian')

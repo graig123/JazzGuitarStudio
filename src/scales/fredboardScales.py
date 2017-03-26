@@ -17,7 +17,7 @@ class create_svg:
         for box in scale1:  # in elke box zitten 6 snaren
 
             color1 = 'black'
-            color2 = '#34A853'
+            color2 = '#fbbc05' #fbbc05  #34A853
 
             string_counter = 0
 

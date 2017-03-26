@@ -6,7 +6,7 @@ import profiles.urls
 import accounts.urls
 import scales.urls
 from . import views
-from scales.views import ScalesPage, AjaxChord
+from scales.views import ScalesPage, AjaxScales
 from chords.views import ChordsPage, ArpegiosPage, AjaxChord
 
 
@@ -17,6 +17,7 @@ urlpatterns = [
     url(r'^chords/$', ChordsPage.as_view(), name='chords'),
     url(r'^arpegios/$', ArpegiosPage.as_view(), name='arpegios'),
     url(r'^AjaxChord/$', AjaxChord.as_view(), name='AjaxChord'),
+    url(r'^AjaxScales/$', AjaxScales.as_view(), name='AjaxScales'),
     #url(r'^scales/', include(scales.urls, namespace='scales')),
     url(r'^users/', include(profiles.urls, namespace='profiles')),
     url(r'^admin/', include(admin.site.urls)),

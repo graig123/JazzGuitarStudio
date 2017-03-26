@@ -34,36 +34,22 @@
   </select>
   </div>
   <div class="col-md-2">
-     <select class="form-control" name="type" onchange="setType()"  id="type" >
-    <option value="drop2">drop2</option>
-    <option value="drop3">drop3</option>
-    <option value="drop4">drop2/4</option>
-    <option value="closed">closed</option>
+     <select class="form-control" name="mode" onchange="setMode()"  id="mode" >
+    <option value="Ionian">Ionian</option>
+    <option value="Dorian">Dorian</option>
+    <option value="Phrygian">Phrygian</option>
   </select>
   </div>
   <div class="col-md-2">
-    <select class="form-control" name="shape" onchange="setShape()"  id="shape" >
-    <option value="M7">M7</option>
-    <option value="7">7</option>
-    <option value="m7">m7</option>
-    <option value="m7b5">m7b5</option>
+    <select class="form-control" name="box" onchange="setBox()"  id="box" >
+    <option value="0">box 1</option>
+    <option value="1">box 2</option>
+    <option value="2">box 3</option>
+    <option value="3">box 4</option>
+    <option value="4">box 5</option>
   </select>
   </div>
-  <div class="col-md-3">
-      <select class="form-control" name="inversion" onchange="setInv()"  id="inv" >
-    <option value="inv1">1st inversion</option>
-    <option value="inv2">2nd inversion</option>
-    <option value="inv3">3rd inversion</option>
-    <option value="inv4">4th inversion</option>
-  </select>
-  </div>
-  <div class="col-md-3">
-    <select class="form-control" name="stringset" onchange="setString()"  id="stringset" >
-    <option value="strS1">stringset1</option>
-    <option value="strS2">stringset2</option>
-    <option value="strS3">stringset3</option>
-  </select>
-  </div>
+
    </form>
 </center>
     </div>
@@ -135,33 +121,23 @@
       note = document.getElementById('root_note').value;
       // alert(note);
     }
-  var shape;
-  function setShape(){
-    shape = document.getElementById('shape').value;
+  var box;
+  function setBox(){
+    box = document.getElementById('box').value;
     // alert(shape);
     }
-  var string;
-  function setString(){
-    string = document.getElementById('stringset').value;
-    // alert(string);
-    }
-  var type_chord;
-  function setType(){
-    type_chord = document.getElementById('type').value;
+  var mode;
+  function setMode(){
+    mode = document.getElementById('mode').value;
     // alert(type_chord);
-    }
-  var inv;
-  function setInv(){
-    inv = document.getElementById('inv').value;
-    // alert(inv);
     }
 $(document).ready(function() {
    $("#form1").change( function() {
 
-    $("#fredboard").load('/AjaxChord/ #fredboard',{note: note, shape: shape, string:string, type_chord:type_chord, inv:inv, 'csrfmiddlewaretoken': '{{ csrf_token }}'});
+    $("#fredboard").load('/AjaxScales/ #fredboard',{note: note, box:box, mode:mode, 'csrfmiddlewaretoken': '{{ csrf_token }}'});
     // });
 
-       $("#title").load('/AjaxChord/ #title',{note: note, shape: shape, string:string, type_chord:type_chord, inv:inv, 'csrfmiddlewaretoken': '{{ csrf_token }}'});
+       $("#title").load('/AjaxScales/ #title',{note: note, box:box, mode:mode, 'csrfmiddlewaretoken': '{{ csrf_token }}'});
         });
 //    $("#shape").change( function() {
 

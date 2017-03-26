@@ -9,7 +9,7 @@ postcount = 0
 
 class ScalesPage(View):
     def get(self, request, *args, **kwargs):
-        add = gs.create_svg('C', 'Dorian', 0)
+        add = gs.create_svg('C', 'Ionian', 0)
         svg = add.draw_single_box()
         svg1 = ''.join(svg)
 
@@ -27,18 +27,16 @@ class ScalesPage(View):
     #     return render(request, 'scales.html', {'svg': svg, 'title': title})
 
 
-class AjaxChord(View):
+class AjaxScales(View):
     def post(self, request, *args, **kwargs):
         color = random.randrange(0, 2)
         print(request.POST)
         x1 = request.POST.get('note', 'C')
-        x2 = request.POST.get('shape', 'M7')
-        x3 = request.POST.get('type_chord', 'drop2')
-        x4 = request.POST.get('inv', 'inv1')
-        x5 = request.POST.get('string', 'strS1')
-        print(x1 + x2, x3 + '_' + x4 + '_' + x5)
-        add1 = gs.create_svg(x1 + x2, x3 + '_' + x4 + '_' + x5, color)
-        add1 = add1.create()
+        x2 = request.POST.get('mode', 'Ionian')
+        x3 = request.POST.get('box', 1)
+        print(x1 + x2, x3)
+        add1 = gs.create_svg(x1, x2, int(x3))
+        add1 = add1.draw_single_box()
         svg3 = ''.join(add1)
-        print('POST request was recieved on AjaxChord')
+        print('POST request was recieved on AjaxScales')
         return render(request, 'scales.html', {'svg': svg3})
